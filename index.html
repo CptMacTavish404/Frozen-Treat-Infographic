@@ -1,526 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Frozen Treat Animated Series: Timeline Infographic</title>
-   <script src="https://cdn.tailwindcss.com"></script>
-   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-   <style>
-      body
-      {
-          font-family: 'Inter', sans-serif;
-          background-color: #F0F0F0;
-          color: #333333;
-      }
-      .chart-container
-      {
-          position: relative;
-          width: 100%;
-          max-width: 900px;
-          margin-left: auto;
-          margin-right: auto;
-          height: 400px;
-          max-height: 500px;
-      }
-      @media (min-width: 768px)
-      {
-          .chart-container
-          {
-              height: 500px;
-          }
-      }
-      .stat-number
-      {
-          font-size: 2.5rem;
-          font-weight: 700;
-          color: #4D96FF; /* Blue */
-      }
-      .table-header
-      {
-          background-color: #4D96FF; /* Blue */
-          color: white;
-      }
-      .section-title
-      {
-          font-size: 1.75rem;
-          font-weight: 700;
-          margin-bottom: 1rem;
-          color: #073B4C; /* Darker Blue for titles */
-      }
-      .card
-      {
-          background-color: white;
-          border-radius: 0.5rem;
-          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-          padding: 1.5rem;
-          margin-bottom: 1.5rem;
-      }
-      .timeline-dot
-      {
-          height: 12px;
-          width: 12px;
-          background-color: #4D96FF;
-          border-radius: 50%;
-          display: inline-block;
-          margin-right: 8px;
-      }
-      .flow-step
-      {
-          padding: 0.5rem;
-          border-left: 3px solid #6BCB77; /* Green */
-          margin-bottom: 0.5rem;
-          background-color: #f8f9fa;
-      }
-   </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyouka Animated Series: Timeline Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body
+        {
+            font-family: 'Inter', sans-serif;
+            background-color: #F0F0F0;
+            color: #333333;
+        }
+        .chart-container
+        {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            max-height: 500px;
+        }
+        @media (min-width: 768px)
+        {
+            .chart-container
+            {
+                height: 500px;
+            }
+        }
+        .stat-number
+        {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #4D96FF; /* Blue */
+        }
+        .table-header
+        {
+            background-color: #4D96FF; /* Blue */
+            color: white;
+        }
+        .section-title
+        {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #073B4C; /* Darker Blue for titles */
+        }
+        .card
+        {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .timeline-dot
+        {
+            height: 12px;
+            width: 12px;
+            background-color: #4D96FF;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .flow-step
+        {
+            padding: 0.5rem;
+            border-left: 3px solid #6BCB77; /* Green */
+            margin-bottom: 0.5rem;
+            background-color: #f8f9fa;
+        }
+    </style>
 </head>
 <body class="leading-relaxed">
 
-   <header class="bg-gradient-to-r from-[#4D96FF] to-[#118AB2] text-white py-12 px-4 text-center">
-      <div class="container mx-auto">
-         <h1 class="text-4xl font-bold mb-4">Timeline Analysis of the Frozen Treat Animated Series</h1>
-         <p class="text-lg max-w-3xl mx-auto">
-            The *Frozen Treat* animated series meticulously constructs its narrative around the in-universe chronological progression of events. This infographic visualizes this timeline, tracking Hotaro Oreki's journey through Kamiyama High School and the mysteries encountered by the Classic Literature Club.
-         </p>
-      </div>
-   </header>
+    <header class="bg-gradient-to-r from-[#4D96FF] to-[#118AB2] text-white py-12 px-4 text-center">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold mb-4">Timeline Analysis of the Hyouka Animated Series</h1>
+            <p class="text-lg max-w-3xl mx-auto">
+                The *Hyouka* animated series meticulously constructs its narrative around the in-universe chronological progression of events. This infographic visualizes this timeline, tracking Hotaro Oreki's journey through Kamiyama High School and the mysteries encountered by the Classic Literature Club.
+            </p>
+        </div>
+    </header>
 
-   <main class="container mx-auto px-4 py-8">
+    <main class="container mx-auto px-4 py-8">
 
-      <section id="club-genesis" class="py-8">
-         <h2 class="section-title text-center">The Classic Literature Club: Genesis of Curiosity</h2>
-         <p class="text-center mb-8 max-w-2xl mx-auto">
-            The series begins with the formation of the Classic Literature Club, bringing together a unique group of individuals who become central to solving the various mysteries that unfold. Their interactions and individual quirks drive the narrative forward.
-         </p>
-         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="card text-center">
-               <h3 class="text-xl font-semibold mb-2 text-[#FF6B6B]">Hotaro Oreki</h3>
-               <p class="text-sm">Pragmatic and energy-saving, yet possesses keen observational and deductive skills. Joins reluctantly at his sister's request.</p>
+        <section id="club-genesis" class="py-8">
+            <h2 class="section-title text-center">The Classic Literature Club: Genesis of Curiosity</h2>
+            <p class="text-center mb-8 max-w-2xl mx-auto">
+                The series begins with the formation of the Classic Literature Club, bringing together a unique group of individuals who become central to solving the various mysteries that unfold. Their interactions and individual quirks drive the narrative forward.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card text-center">
+                    <h3 class="text-xl font-semibold mb-2 text-[#FF6B6B]">Hotaro Oreki</h3>
+                    <p class="text-sm">Pragmatic and energy-saving, yet possesses keen observational and deductive skills. Joins reluctantly at his sister's request.</p>
+                </div>
+                <div class="card text-center">
+                    <h3 class="text-xl font-semibold mb-2 text-[#FFD93D]">Eru Chitanda</h3>
+                    <p class="text-sm">Inquisitive and energetic, from a wealthy farming family. Her catchphrase, "I'm curious!", often initiates investigations.</p>
+                </div>
+                <div class="card text-center">
+                    <h3 class="text-xl font-semibold mb-2 text-[#6BCB77]">Satoshi Fukube</h3>
+                    <p class="text-sm">Hotaro's friend, a "human database" with an impressive memory. Cheerful and knowledgeable.</p>
+                </div>
+                <div class="card text-center">
+                    <h3 class="text-xl font-semibold mb-2 text-[#4D96FF]">Mayaka Ibara</h3>
+                    <p class="text-sm">Passionate manga artist, member of the manga club. Strict with others and herself, harbors feelings for Satoshi.</p>
+                </div>
             </div>
-            <div class="card text-center">
-               <h3 class="text-xl font-semibold mb-2 text-[#800080]">Eru Chitanda</h3>
-               <p class="text-sm">Inquisitive and energetic, from a wealthy farming family. Her catchphrase, "I'm curious!", often initiates investigations.</p>
-            </div>
-            <div class="card text-center">
-               <h3 class="text-xl font-semibold mb-2 text-[#6BCB77]">Satoshi Fukube</h3>
-               <p class="text-sm">Hotaro's friend, a "human database" with an impressive memory. Cheerful and knowledgeable.</p>
-            </div>
-            <div class="card text-center">
-               <h3 class="text-xl font-semibold mb-2 text-[#4D96FF]">Mayaka Ibara</h3>
-               <p class="text-sm">Passionate manga artist, member of the manga club. Strict with others and herself, harbors feelings for Satoshi.</p>
-            </div>
-         </div>
-      </section>
+        </section>
 
-      <section id="timeline-overview-chart" class="py-8">
-         <h2 class="section-title text-center">Visual Timeline of Major Story Arcs</h2>
-         <p class="text-center mb-6 max-w-3xl mx-auto">
-            The following chart provides a visual overview of the major story arcs in *Frozen Treat*, mapping their occurrence across Hotaro's first year and the beginning of his second year. The Japanese academic calendar (April to March) serves as the temporal backbone.
-         </p>
-         <div class="card">
-            <div class="chart-container">
-               <canvas id="Frozen TreatTimelineChart"></canvas>
+        <section id="timeline-overview-chart" class="py-8">
+            <h2 class="section-title text-center">Visual Timeline of Major Story Arcs</h2>
+            <p class="text-center mb-6 max-w-3xl mx-auto">
+                The following chart provides a visual overview of the major story arcs in *Hyouka*, mapping their occurrence across Hotaro's first year and the beginning of his second year. The Japanese academic calendar (April to March) serves as the temporal backbone.
+            </p>
+            <div class="card">
+                <div class="chart-container">
+                    <canvas id="hyoukaTimelineChart"></canvas>
+                </div>
             </div>
-         </div>
-         <p class="text-sm text-center mt-4 text-gray-600">
-            This Gantt-style chart illustrates the approximate duration and sequencing of key narrative arcs. Month 1 corresponds to April of the first academic year.
-         </p>
-      </section>
+            <p class="text-sm text-center mt-4 text-gray-600">
+                This Gantt-style chart illustrates the approximate duration and sequencing of key narrative arcs. Month 1 corresponds to April of the first academic year.
+            </p>
+        </section>
 
-      <section id="detailed-arcs" class="py-8">
-         <h2 class="section-title text-center">Detailed Arc Breakdown: A Year of Mysteries</h2>
-         <p class="text-center mb-8 max-w-2xl mx-auto">
-            The narrative of *Frozen Treat* unfolds methodically, with each school term bringing new challenges and deepening character relationships.
-         </p>
+        <section id="detailed-arcs" class="py-8">
+            <h2 class="section-title text-center">Detailed Arc Breakdown: A Year of Mysteries</h2>
+            <p class="text-center mb-8 max-w-2xl mx-auto">
+                The narrative of *Hyouka* unfolds methodically, with each school term bringing new challenges and deepening character relationships.
+            </p>
 
-         <div class="card">
-            <h3 class="text-2xl font-semibold mb-4 text-[#073B4C]">First Year: Spring Semester (April - July)</h3>
-            <p class="mb-4">The series commences with Hotaro's reluctant entry into the Classic Literature Club in <strong>April</strong>, aligning with the start of the Japanese academic year. This period establishes the club's dynamics and introduces the initial mysteries.</p>
+            <div class="card">
+                <h3 class="text-2xl font-semibold mb-4 text-[#073B4C]">First Year: Spring Semester (April - July)</h3>
+                <p class="mb-4">The series commences with Hotaro's reluctant entry into the Classic Literature Club in <strong>April</strong>, aligning with the start of the Japanese academic year. This period establishes the club's dynamics and introduces the initial mysteries.</p>
 
-            <div class="mb-6">
-               <h4 class="text-xl font-semibold text-[#FF6B6B] mb-2">The "Frozen Treat" Arc Initiation (April - Early May)</h4>
-               <p class="mb-2">Early puzzles, like Eru's locked room entry and a library book mystery, showcase Hotaro's abilities. The central mystery of Eru's uncle and the "Frozen Treat" anthology begins, driven by Eru's curiosity. Mid-term exams in late April/early May serve as a temporal marker.</p>
-               <p class="mb-2"><span class="timeline-dot" style="background-color: #FF6B6B;"></span><strong>Key Event:</strong> Club Formation (April)</p>
-               <div class="mt-2">
-                  <p class="font-semibold">Solving the "Frozen Treat" Mystery (Early May):</p>
-                  <ol class="list-decimal list-inside text-sm space-y-1 mt-1">
-                     <li class="flow-step">Tomoe's letter reveals old anthologies in the Biology Room.</li>
-                     <li class="flow-step">Club meets at Eru's house; theories are presented.</li>
-                     <li class="flow-step">Hotaro deduces Eru's uncle negotiated to save the Culture Festival, leading to his expulsion.</li>
-                     <li class="flow-step">"Frozen Treat" is revealed as a pun for "I scream," a message of resilience.</li>
-                  </ol>
-               </div>
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold text-[#FF6B6B] mb-2">The "Hyouka" Arc Initiation (April - Early May)</h4>
+                    <p class="mb-2">Early puzzles, like Eru's locked room entry and a library book mystery, showcase Hotaro's abilities. The central mystery of Eru's uncle and the "Hyouka" anthology begins, driven by Eru's curiosity. Mid-term exams in late April/early May serve as a temporal marker.</p>
+                    <p class="mb-2"><span class="timeline-dot" style="background-color: #FF6B6B;"></span><strong>Key Event:</strong> Club Formation (April)</p>
+                    <div class="mt-2">
+                        <p class="font-semibold">Solving the "Hyouka" Mystery (Early May):</p>
+                        <ol class="list-decimal list-inside text-sm space-y-1 mt-1">
+                            <li class="flow-step">Tomoe's letter reveals old anthologies in the Biology Room.</li>
+                            <li class="flow-step">Club meets at Eru's house; theories are presented.</li>
+                            <li class="flow-step">Hotaro deduces Eru's uncle negotiated to save the Culture Festival, leading to his expulsion.</li>
+                            <li class="flow-step">"Hyouka" is revealed as a pun for "I scream," a message of resilience.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-semibold text-[#FFD93D] mb-2">The Detective Movie Arc (May)</h4>
+                    <p class="mb-2">Known as "The Credit Roll of the Fool," this arc occurs in <strong>May</strong>. The club attempts to solve an unfinished mystery movie script from Class 2-F. Hotaro is manipulated by Fuyumi Irisu, leading to a sense of bitterness and a challenge to his overconfidence.</p>
+                    <p><span class="timeline-dot" style="background-color: #FFD93D;"></span><strong>Key Impact:</strong> Introduces ethical ambiguity and personal challenge for Hotaro.</p>
+                </div>
             </div>
 
-            <div>
-               <h4 class="text-xl font-semibold text-[#FF3EAD] mb-2">The Detective Movie Arc (May)</h4>
-               <p class="mb-2">Known as "The Credit Roll of the Fool," this arc occurs in <strong>May</strong>. The club attempts to solve an unfinished mystery movie script from Class 2-F. Hotaro is manipulated by Fuyumi Irisu, leading to a sense of bitterness and a challenge to his overconfidence.</p>
-               <p><span class="timeline-dot" style="background-color: #FF3EAD;"></span><strong>Key Impact:</strong> Introduces ethical ambiguity and personal challenge for Hotaro.</p>
+            <div class="card">
+                <h3 class="text-2xl font-semibold mb-4 text-[#073B4C]">First Year: Summer Break (August)</h3>
+                <p class="mb-4">The summer vacation offers a narrative pause, focusing on character interactions and bonding outside of formal mysteries.</p>
+                <div>
+                    <h4 class="text-xl font-semibold text-[#6BCB77] mb-2">The Hot Spring Trip (OVA - August)</h4>
+                    <p class="mb-2">Explicitly set during the <strong>summer vacation (August)</strong>, this OVA sees the four club members on a trip planned by Eru. They stay at an inn owned by Mayaka's relatives. Ghost stories are shared, and Eru expresses a desire for a sibling. It serves as a character-focused interlude.</p>
+                    <p><span class="timeline-dot" style="background-color: #6BCB77;"></span><strong>Focus:</strong> Character bonding and slice-of-life elements.</p>
+                </div>
             </div>
-         </div>
 
-         <div class="card">
-            <h3 class="text-2xl font-semibold mb-4 text-[#073B4C]">First Year: Summer Break (August)</h3>
-            <p class="mb-4">The summer vacation offers a narrative pause, focusing on character interactions and bonding outside of formal mysteries.</p>
-            <div>
-               <h4 class="text-xl font-semibold text-[#6BCB77] mb-2">The Hot Spring Trip (OVA - August)</h4>
-               <p class="mb-2">Explicitly set during the <strong>summer vacation (August)</strong>, this OVA sees the four club members on a trip planned by Eru. They stay at an inn owned by Mayaka's relatives. Ghost stories are shared, and Eru expresses a desire for a sibling. It serves as a character-focused interlude.</p>
-               <p><span class="timeline-dot" style="background-color: #6BCB77;"></span><strong>Focus:</strong> Character bonding and slice-of-life elements.</p>
+            <div class="card">
+                <h3 class="text-2xl font-semibold mb-4 text-[#073B4C]">First Year: Fall Semester (September - October)</h3>
+                <p class="mb-4">The fall semester is dominated by the Kamiyama High School Culture Festival, presenting a complex web of intertwined mysteries.</p>
+                <div>
+                    <h4 class="text-xl font-semibold text-[#4D96FF] mb-2">The Culture Festival Arc: "The Kudryavka Sequence" (Fall - September/October)</h4>
+                    <p class="mb-2">This arc unfolds during the "Kanya Festa!" in <strong>September or October</strong>. The "Juumoji Incident," a series of thefts, becomes a central mystery for the club to solve while managing their own festival booth. This arc tests the club's collaborative abilities on a larger scale.</p>
+                    <p><span class="timeline-dot" style="background-color: #4D96FF;"></span><strong>Key Challenge:</strong> The "Juumoji" thefts and managing club activities during the festival.</p>
+                </div>
             </div>
-         </div>
 
-         <div class="card">
-            <h3 class="text-2xl font-semibold mb-4 text-[#073B4C]">First Year: Fall Semester (September - October)</h3>
-            <p class="mb-4">The fall semester is dominated by the Kamiyama High School Culture Festival, presenting a complex web of intertwined mysteries.</p>
-            <div>
-               <h4 class="text-xl font-semibold text-[#4D96FF] mb-2">The Culture Festival Arc: "The Kudryavka Sequence" (Fall - September/October)</h4>
-               <p class="mb-2">This arc unfolds during the "Kanya Festa!" in <strong>September or October</strong>. The "Juumoji Incident," a series of thefts, becomes a central mystery for the club to solve while managing their own festival booth. This arc tests the club's collaborative abilities on a larger scale.</p>
-               <p><span class="timeline-dot" style="background-color: #4D96FF;"></span><strong>Key Challenge:</strong> The "Juumoji" thefts and managing club activities during the festival.</p>
+            <div class="card">
+                <h3 class="text-2xl font-semibold mb-4 text-[#073B4C]">First Year: Winter (January - February)</h3>
+                <p class="mb-4">Winter events shift focus to personal interactions and subtle romantic developments, contrasting with earlier large-scale mysteries.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-xl font-semibold text-[#FF8C42] mb-2">New Year's Events (January 1st)</h4>
+                        <p class="mb-2">Marked by the "Sappy New Year" chapter, events occur around <strong>January 1st</strong>, aligning with traditional celebrations and personal reflections.</p>
+                        <p><span class="timeline-dot" style="background-color: #FF8C42;"></span><strong>Theme:</strong> Personal reflection and tradition.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-[#A06CD5] mb-2">Valentine's Day Events (February 14th)</h4>
+                        <p class="mb-2">"The Case of the Hand-made Chocolate" implies events around <strong>February 14th</strong>. This period highlights romantic undertones and evolving relationships.</p>
+                        <p><span class="timeline-dot" style="background-color: #A06CD5;"></span><strong>Theme:</strong> Romantic developments and interpersonal dynamics.</p>
+                    </div>
+                </div>
             </div>
-         </div>
-
-         <div class="card">
-            <h3 class="text-2xl font-semibold mb-4 text-[#073B4C]">First Year: Winter (January - February)</h3>
-            <p class="mb-4">Winter events shift focus to personal interactions and subtle romantic developments, contrasting with earlier large-scale mysteries.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-               <div>
-                  <h4 class="text-xl font-semibold text-[#FF8C42] mb-2">New Year's Events (January 1st)</h4>
-                  <p class="mb-2">Marked by the "Sappy New Year" chapter, events occur around <strong>January 1st</strong>, aligning with traditional celebrations and personal reflections.</p>
-                  <p><span class="timeline-dot" style="background-color: #FF8C42;"></span><strong>Theme:</strong> Personal reflection and tradition.</p>
-               </div>
-               <div>
-                  <h4 class="text-xl font-semibold text-[#A06CD5] mb-2">Valentine's Day Events (February 14th)</h4>
-                  <p class="mb-2">"The Case of the Hand-made Chocolate" implies events around <strong>February 14th</strong>. This period highlights romantic undertones and evolving relationships.</p>
-                  <p><span class="timeline-dot" style="background-color: #A06CD5;"></span><strong>Theme:</strong> Romantic developments and interpersonal dynamics.</p>
-               </div>
+             <div class="card">
+                <h3 class="text-2xl font-semibold mb-4 text-[#073B4C]">Second Year: Spring Onwards (April - May)</h3>
+                <p class="mb-4">The timeline extends into the characters' second year, showing continued growth and relationship developments, signifying maturation beyond the initial series scope.</p>
+                <div>
+                    <h4 class="text-xl font-semibold text-[#6BCB77] mb-2">Character Relationship Developments (April - May)</h4>
+                    <p class="mb-2">A significant development occurs as Satoshi Fukube and Mayaka Ibara begin dating in the <strong>spring of their second year (April - May)</strong>. This marks a progression from hinted feelings to a concrete relationship, implying ongoing evolution for all characters.</p>
+                    <p><span class="timeline-dot" style="background-color: #6BCB77;"></span><strong>Key Development:</strong> Satoshi and Mayaka start dating.</p>
+                </div>
             </div>
-         </div>
-         <div class="card">
-            <h3 class="text-2xl font-semibold mb-4 text-[#073B4C]">Second Year: Spring Onwards (April - May)</h3>
-            <p class="mb-4">The timeline extends into the characters' second year, showing continued growth and relationship developments, signifying maturation beyond the initial series scope.</p>
-            <div>
-               <h4 class="text-xl font-semibold text-[#6BCB77] mb-2">Character Relationship Developments (April - May)</h4>
-               <p class="mb-2">A significant development occurs as Satoshi Fukube and Mayaka Ibara begin dating in the <strong>spring of their second year (April - May)</strong>. This marks a progression from hinted feelings to a concrete relationship, implying ongoing evolution for all characters.</p>
-               <p><span class="timeline-dot" style="background-color: #6BCB77;"></span><strong>Key Development:</strong> Satoshi and Mayaka start dating.</p>
+        </section>
+
+        <section id="summary-tables" class="py-8">
+            <h2 class="section-title text-center">Summary of Key Timelined Events</h2>
+            <p class="text-center mb-8 max-w-2xl mx-auto">
+                The following tables provide a condensed overview of major story arcs and a detailed chronology of events as they unfold in the Hyouka series.
+            </p>
+
+            <div class="card mb-12">
+                <h3 class="text-xl font-semibold mb-4 text-center">Table 1: Major Story Arcs and Estimated In-Universe Timeline</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-sm text-left">
+                        <thead class="table-header">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">Arc Name</th>
+                                <th scope="col" class="px-6 py-3">Key Events</th>
+                                <th scope="col" class="px-6 py-3">Estimated In-Universe Period</th>
+                                <th scope="col" class="px-6 py-3">Key Characters Involved</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="px-6 py-4 font-medium">"Hyouka" Mystery Arc</td>
+                                <td class="px-6 py-4">Club Formation, Eru's Uncle's Mystery, Mid-term Exams</td>
+                                <td class="px-6 py-4">April - Early May (First Year)</td>
+                                <td class="px-6 py-4">Hotaro, Eru, Satoshi, Mayaka, Tomoe Oreki</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50">
+                                <td class="px-6 py-4 font-medium">"Detective Movie" Arc</td>
+                                <td class="px-6 py-4">Class 2-F Mystery Production, Hotaro's Manipulation</td>
+                                <td class="px-6 py-4">May (First Year)</td>
+                                <td class="px-6 py-4">Hotaro, Eru, Satoshi, Mayaka, Fuyumi Irisu</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-4 font-medium">Hot Spring Trip (OVA)</td>
+                                <td class="px-6 py-4">Club Trip, Ghost Stories</td>
+                                <td class="px-6 py-4">Summer Vacation (August, First Year)</td>
+                                <td class="px-6 py-4">Hotaro, Eru, Satoshi, Mayaka, Mayaka's Cousins</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50">
+                                <td class="px-6 py-4 font-medium">"Culture Festival" Arc</td>
+                                <td class="px-6 py-4">Kanya Festival, "Juumoji" Incident</td>
+                                <td class="px-6 py-4">Fall (Sept/Oct, First Year)</td>
+                                <td class="px-6 py-4">Hotaro, Eru, Satoshi, Mayaka, Fuyumi Irisu, Masashi Togaito</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-4 font-medium">Winter Events</td>
+                                <td class="px-6 py-4">New Year's Day, Valentine's Day</td>
+                                <td class="px-6 py-4">January - February (First Year)</td>
+                                <td class="px-6 py-4">Hotaro, Eru, Satoshi, Mayaka</td>
+                            </tr>
+                             <tr class="bg-gray-50">
+                                <td class="px-6 py-4 font-medium">Second Year Developments</td>
+                                <td class="px-6 py-4">Satoshi and Mayaka begin dating, continued character progression</td>
+                                <td class="px-6 py-4">Spring (April - May, Second Year)</td>
+                                <td class="px-6 py-4">Hotaro, Eru, Satoshi, Mayaka</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                 <p class="text-xs text-gray-500 mt-2 text-center">This table summarizes the main narrative segments and their approximate timing within the series' chronology.</p>
             </div>
-         </div>
-      </section>
 
-      <section id="summary-tables" class="py-8">
-         <h2 class="section-title text-center">Summary of Key Timelined Events</h2>
-         <p class="text-center mb-8 max-w-2xl mx-auto">
-            The following tables provide a condensed overview of major story arcs and a detailed chronology of events as they unfold in the Frozen Treat series.
-         </p>
-
-         <div class="card mb-12">
-            <h3 class="text-xl font-semibold mb-4 text-center">Table 1: Major Story Arcs and Estimated In-Universe Timeline</h3>
-            <div class="overflow-x-auto">
-               <table class="min-w-full text-sm text-left">
-                  <thead class="table-header">
-                     <tr>
-                        <th scope="col" class="px-6 py-3">Arc Name</th>
-                        <th scope="col" class="px-6 py-3">Key Events</th>
-                        <th scope="col" class="px-6 py-3">Estimated In-Universe Period</th>
-                        <th scope="col" class="px-6 py-3">Key Characters Involved</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr class="border-b">
-                        <td class="px-6 py-4 font-medium">"Frozen Treat" Mystery Arc</td>
-                        <td class="px-6 py-4">Club Formation, Eru's Uncle's Mystery, Mid-term Exams</td>
-                        <td class="px-6 py-4">April - Early May (First Year)</td>
-                        <td class="px-6 py-4">Hotaro, Eru, Satoshi, Mayaka, Tomoe Oreki</td>
-                     </tr>
-                     <tr class="border-b bg-gray-50">
-                        <td class="px-6 py-4 font-medium">"Detective Movie" Arc</td>
-                        <td class="px-6 py-4">Class 2-F Mystery Production, Hotaro's Manipulation</td>
-                        <td class="px-6 py-4">May (First Year)</td>
-                        <td class="px-6 py-4">Hotaro, Eru, Satoshi, Mayaka, Fuyumi Irisu</td>
-                     </tr>
-                     <tr class="border-b">
-                        <td class="px-6 py-4 font-medium">Hot Spring Trip (OVA)</td>
-                        <td class="px-6 py-4">Club Trip, Ghost Stories</td>
-                        <td class="px-6 py-4">Summer Vacation (August, First Year)</td>
-                        <td class="px-6 py-4">Hotaro, Eru, Satoshi, Mayaka, Mayaka's Cousins</td>
-                     </tr>
-                     <tr class="border-b bg-gray-50">
-                        <td class="px-6 py-4 font-medium">"Culture Festival" Arc</td>
-                        <td class="px-6 py-4">Kanya Festival, "Juumoji" Incident</td>
-                        <td class="px-6 py-4">Fall (Sept/Oct, First Year)</td>
-                        <td class="px-6 py-4">Hotaro, Eru, Satoshi, Mayaka, Fuyumi Irisu, Masashi Togaito</td>
-                     </tr>
-                     <tr class="border-b">
-                        <td class="px-6 py-4 font-medium">Winter Events</td>
-                        <td class="px-6 py-4">New Year's Day, Valentine's Day</td>
-                        <td class="px-6 py-4">January - February (First Year)</td>
-                        <td class="px-6 py-4">Hotaro, Eru, Satoshi, Mayaka</td>
-                     </tr>
-                     <tr class="bg-gray-50">
-                        <td class="px-6 py-4 font-medium">Second Year Developments</td>
-                        <td class="px-6 py-4">Satoshi and Mayaka begin dating, continued character progression</td>
-                        <td class="px-6 py-4">Spring (April - May, Second Year)</td>
-                        <td class="px-6 py-4">Hotaro, Eru, Satoshi, Mayaka</td>
-                     </tr>
-                  </tbody>
-               </table>
+            <div class="card">
+                <h3 class="text-xl font-semibold mb-4 text-center">Table 2: Detailed Episode/Event Chronology</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-sm text-left">
+                        <thead class="table-header">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">Event/Episode Description</th>
+                                <th scope="col" class="px-6 py-3">Specific Temporal Marker</th>
+                                <th scope="col" class="px-6 py-3">Associated Arc/Volume</th>
+                                <th scope="col" class="px-6 py-3">Episode/Chapter Reference</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="px-6 py-4">Hotaro Oreki joins Classic Literature Club; Eru's locked room mystery; Library book mystery</td>
+                                <td class="px-6 py-4">April (First Year)</td>
+                                <td class="px-6 py-4">"Hyouka" Mystery Arc</td>
+                                <td class="px-6 py-4">Ep. 1: "Reviving the Classic Literature Club"</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50">
+                                <td class="px-6 py-4">Eru's uncle's mystery introduced; Mid-term exams</td>
+                                <td class="px-6 py-4">April - Early May (First Year)</td>
+                                <td class="px-6 py-4">"Hyouka" Mystery Arc</td>
+                                <td class="px-6 py-4">Ep. 2: "The Esteemed Legacy of the Classic Literature Club"</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-4">Letter from Tomoe about anthologies; Club meeting at Eru's house, theories presented; "Hyouka" mystery solved</td>
+                                <td class="px-6 py-4">Early May (First Year)</td>
+                                <td class="px-6 py-4">"Hyouka" Mystery Arc</td>
+                                <td class="px-6 py-4">Ep. 3-5: "The Circumstances of the Jyuumonji Incident", "The Past Circumstances of the Jyuumonji Incident", "The Truth of the Jyuumonji Incident"</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50">
+                                <td class="px-6 py-4">Class 2-F mystery production begins; Hotaro's manipulation by Irisu revealed</td>
+                                <td class="px-6 py-4">May (First Year)</td>
+                                <td class="px-6 py-4">"Detective Movie" Arc ("Credit Roll of the Fool")</td>
+                                <td class="px-6 py-4">Ep. 6-7: "The Grand Crime of the Fool" (Parts 1 & 2)</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-4">Hot Spring Trip (OVA)</td>
+                                <td class="px-6 py-4">Summer Vacation (August, First Year)</td>
+                                <td class="px-6 py-4">OVA</td>
+                                <td class="px-6 py-4">Ep. 11.5: "The Things We've Come to Do"</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50">
+                                <td class="px-6 py-4">Kamiyama High School Culture Festival ("Kanya Festa!"); "Juumoji" Incident during festival</td>
+                                <td class="px-6 py-4">Fall (Sept/Oct, First Year)</td>
+                                <td class="px-6 py-4">"Culture Festival" Arc ("Kudryavka Sequence")</td>
+                                <td class="px-6 py-4">Ep. 8-17 (Various titles related to "Furuoka High School Festival")</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-4">New Year's events</td>
+                                <td class="px-6 py-4">January 1st (First Year)</td>
+                                <td class="px-6 py-4">"The Doll that Took a Detour"</td>
+                                <td class="px-6 py-4">Ep. 18: "The Doll That Took a Detour"</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50">
+                                <td class="px-6 py-4">Valentine's Day (Hand-made Chocolate)</td>
+                                <td class="px-6 py-4">February 14th (First Year)</td>
+                                <td class="px-6 py-4">"The Doll that Took a Detour"</td>
+                                <td class="px-6 py-4">Ep. 20: "The Case of the Hand-made Chocolate"</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-6 py-4">Satoshi and Mayaka begin dating</td>
+                                <td class="px-6 py-4">Spring (April - May, Second Year)</td>
+                                <td class="px-6 py-4">Character Relationship Development</td>
+                                <td class="px-6 py-4">Post-Anime (Light Novel Vol. 5+)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-xs text-gray-500 mt-2 text-center">This table provides a more granular list of specific events and their chronological placement within the Hyouka narrative.</p>
             </div>
-            <p class="text-xs text-gray-500 mt-2 text-center">This table summarizes the main narrative segments and their approximate timing within the series' chronology.</p>
-         </div>
+        </section>
 
-         <div class="card">
-            <h3 class="text-xl font-semibold mb-4 text-center">Table 2: Detailed Episode/Event Chronology</h3>
-            <div class="overflow-x-auto">
-               <table class="min-w-full text-sm text-left">
-                  <thead class="table-header">
-                     <tr>
-                        <th scope="col" class="px-6 py-3">Event/Episode Description</th>
-                        <th scope="col" class="px-6 py-3">Specific Temporal Marker</th>
-                        <th scope="col" class="px-6 py-3">Associated Arc/Volume</th>
-                        <th scope="col" class="px-6 py-3">Episode/Chapter Reference</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr class="border-b">
-                        <td class="px-6 py-4">Hotaro Oreki joins Classic Literature Club; Eru's locked room mystery; Library book mystery</td>
-                        <td class="px-6 py-4">April (First Year)</td>
-                        <td class="px-6 py-4">"Frozen Treat" Mystery Arc</td>
-                        <td class="px-6 py-4">Ep. 1: "Reviving the Classic Literature Club"</td>
-                     </tr>
-                     <tr class="border-b bg-gray-50">
-                        <td class="px-6 py-4">Eru's uncle's mystery introduced; Mid-term exams</td>
-                        <td class="px-6 py-4">April - Early May (First Year)</td>
-                        <td class="px-6 py-4">"Frozen Treat" Mystery Arc</td>
-                        <td class="px-6 py-4">Ep. 2: "The Esteemed Legacy of the Classic Literature Club"</td>
-                     </tr>
-                     <tr class="border-b">
-                        <td class="px-6 py-4">Letter from Tomoe about anthologies; Club meeting at Eru's house, theories presented; "Frozen Treat" mystery solved</td>
-                        <td class="px-6 py-4">Early May (First Year)</td>
-                        <td class="px-6 py-4">"Frozen Treat" Mystery Arc</td>
-                        <td class="px-6 py-4">Ep. 3-5: "The Circumstances of the Jyuumonji Incident", "The Past Circumstances of the Jyuumonji Incident", "The Truth of the Jyuumonji Incident"</td>
-                     </tr>
-                     <tr class="border-b bg-gray-50">
-                        <td class="px-6 py-4">Class 2-F mystery production begins; Hotaro's manipulation by Irisu revealed</td>
-                        <td class="px-6 py-4">May (First Year)</td>
-                        <td class="px-6 py-4">"Detective Movie" Arc ("Credit Roll of the Fool")</td>
-                        <td class="px-6 py-4">Ep. 6-7: "The Grand Crime of the Fool" (Parts 1 & 2)</td>
-                     </tr>
-                     <tr class="border-b">
-                        <td class="px-6 py-4">Hot Spring Trip (OVA)</td>
-                        <td class="px-6 py-4">Summer Vacation (August, First Year)</td>
-                        <td class="px-6 py-4">OVA</td>
-                        <td class="px-6 py-4">Ep. 11.5: "The Things We've Come to Do"</td>
-                     </tr>
-                     <tr class="border-b bg-gray-50">
-                        <td class="px-6 py-4">Kamiyama High School Culture Festival ("Kanya Festa!"); "Juumoji" Incident during festival</td>
-                        <td class="px-6 py-4">Fall (Sept/Oct, First Year)</td>
-                        <td class="px-6 py-4">"Culture Festival" Arc ("Kudryavka Sequence")</td>
-                        <td class="px-6 py-4">Ep. 8-17 (Various titles related to "Furuoka High School Festival")</td>
-                     </tr>
-                     <tr class="border-b">
-                        <td class="px-6 py-4">New Year's events</td>
-                        <td class="px-6 py-4">January 1st (First Year)</td>
-                        <td class="px-6 py-4">"The Doll that Took a Detour"</td>
-                        <td class="px-6 py-4">Ep. 18: "The Doll That Took a Detour"</td>
-                     </tr>
-                     <tr class="border-b bg-gray-50">
-                        <td class="px-6 py-4">Valentine's Day (Hand-made Chocolate)</td>
-                        <td class="px-6 py-4">February 14th (First Year)</td>
-                        <td class="px-6 py-4">"The Doll that Took a Detour"</td>
-                        <td class="px-6 py-4">Ep. 20: "The Case of the Hand-made Chocolate"</td>
-                     </tr>
-                     <tr class="bg-gray-50">
-                        <td class="px-6 py-4">Satoshi and Mayaka begin dating</td>
-                        <td class="px-6 py-4">Spring (April - May, Second Year)</td>
-                        <td class="px-6 py-4">Character Relationship Development</td>
-                        <td class="px-6 py-4">Post-Anime (Light Novel Vol. 5+)</td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <p class="text-xs text-gray-500 mt-2 text-center">This table provides a more granular list of specific events and their chronological placement within the Frozen Treat narrative.</p>
-         </div>
-      </section>
+    </main>
 
-   </main>
+    <footer class="bg-gray-800 text-white py-10 px-4 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Conclusion: Narrative Pacing and Significance</h2>
+            <p class="max-w-3xl mx-auto text-gray-300">
+                The *Hyouka* animated series demonstrates a sophisticated approach to narrative construction through its meticulous chronological progression. Leveraging the Japanese academic year, the series provides a realistic backdrop for character development and mystery-solving. The deliberate pacing, shifting between intense intellectual challenges and character-focused episodes, is key to exploring the cast's growth. This structured timeline underscores themes of curiosity, introspection, and the subtle complexities of high school life, culminating in a nuanced portrayal of youth and self-discovery.
+            </p>
+            <p class="text-xs mt-6 text-gray-500">Infographic based on the "Timeline Analysis of the Hyouka Animated Series" report.</p>
+        </div>
+    </footer>
 
-   <footer class="bg-gray-800 text-white py-10 px-4 text-center">
-      <div class="container mx-auto">
-         <h2 class="text-2xl font-bold mb-4">Conclusion: Narrative Pacing and Significance</h2>
-         <p class="max-w-3xl mx-auto text-gray-300">
-            The *Frozen Treat* animated series demonstrates a sophisticated approach to narrative construction through its meticulous chronological progression. Leveraging the Japanese academic year, the series provides a realistic backdrop for character development and mystery-solving. The deliberate pacing, shifting between intense intellectual challenges and character-focused episodes, is key to exploring the cast's growth. This structured timeline underscores themes of curiosity, introspection, and the subtle complexities of high school life, culminating in a nuanced portrayal of youth and self-discovery.
-         </p>
-         <p class="text-xs mt-6 text-gray-500">Infographic based on the "Timeline Analysis of the Frozen Treat Animated Series" report.</p>
-      </div>
-   </footer>
+    <script>
+        function wrapLabel(str, maxWidth)
+        {
+            if (str.length <= maxWidth)
+            {
+                return str;
+            }
+            const words = str.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words)
+            {
+                if
+                ((currentLine + word).length > maxWidth && currentLine.length > 0)
+                {
+                    lines.push(currentLine.trim());
+                    currentLine = word + ' ';
+                } else
+                {
+                    currentLine += word + ' ';
+                }
+            }
+            lines.push(currentLine.trim());
+            return lines;
+        }
 
-   <script>
-      function wrapLabel(str, maxWidth)
-      {
-          if (str.length <= maxWidth)
-          {
-              return str;
-          }
-          const words = str.split(' ');
-          const lines = [];
-          let currentLine = '';
-          for (const word of words)
-          {
-              if
-              ((currentLine + word).length > maxWidth && currentLine.length > 0)
-              {
-                  lines.push(currentLine.trim());
-                  currentLine = word + ' ';
-              } 
-              else
-              {
-                  currentLine += word + ' ';
-              }
-          }
-          lines.push(currentLine.trim());
-          return lines;
-      }
+        const arcDataRawLabels = [
+            "'Hyouka' Mystery Arc",
+            "'Detective Movie' Arc",
+            "Hot Spring Trip (OVA)",
+            "'Culture Festival' Arc",
+            "Winter Events",
+            "Second Year Developments"
+        ];
 
-      const arcDataRawLabels = 
-      [
-          "'Frozen Treat' Mystery Arc",
-          "'Detective Movie' Arc",
-          "Hot Spring Trip (OVA)",
-          "'Culture Festival' Arc",
-          "Winter Events",
-          "Second Year Developments"
-      ];
+        const arcDataProcessedLabels = arcDataRawLabels.map(label => wrapLabel(label, 16));
 
-      const arcDataProcessedLabels = arcDataRawLabels.map(label => wrapLabel(label, 16));
+        const arcData = {
+            labels: arcDataProcessedLabels,
+            datasets: [
+                {
+                    label: 'Timeline of Events',
+                    data: [
+                        [1, 2.5],    // Hyouka: Apr Y1 (1) to Early May Y1 (2.5)
+                        [2.3, 3.0],  // Detective Movie: May Y1 (2.3 to 3.0)
+                        [5.0, 5.9],  // Hot Spring: August Y1 (5.0 to 5.9)
+                        [6.0, 8.0],  // Culture Festival: Sept Y1 (6.0) to Oct Y1 (ends at 8.0)
+                        [10.0, 12.0], // Winter Events: Jan Y1 (10.0) to Feb Y1 (ends at 12.0)
+                        [13.0, 15.0]  // Second Year: Apr Y2 (13.0) to May Y2 (ends at 15.0)
+                    ],
+                    backgroundColor: [
+                        '#FF6B6B', // Coral Red
+                        '#FFD93D', // Bright Yellow
+                        '#6BCB77', // Green
+                        '#4D96FF', // Blue
+                        '#FF8C42', // Orange
+                        '#A06CD5'  // Purple
+                    ],
+                    borderColor: '#333333',
+                    borderWidth: 1,
+                    barPercentage: 0.6,
+                    categoryPercentage: 0.7
+                }
+            ]
+        };
 
-      const arcData = 
-      {
-          labels: arcDataProcessedLabels,
-          datasets: 
-          [
-              {
-                  label: 'Timeline of Events',
-                  data: 
-                  [
-                      [1, 2.5],    // Frozen Treat: Apr Y1 (1) to Early May Y1 (2.5)
-                      [2.3, 3.0],  // Detective Movie: May Y1 (2.3 to 3.0)
-                      [5.0, 5.9],  // Hot Spring: August Y1 (5.0 to 5.9)
-                      [6.0, 8.0],  // Culture Festival: Sept Y1 (6.0) to Oct Y1 (ends at 8.0)
-                      [10.0, 12.0], // Winter Events: Jan Y1 (10.0) to Feb Y1 (ends at 12.0)
-                      [13.0, 15.0]  // Second Year: Apr Y2 (13.0) to May Y2 (ends at 15.0)
-                  ],
-                  backgroundColor: 
-                  [
-                      '#FF6B6B', // Coral Red
-                      '#FF3EAD', // Pink
-                      '#6BCB77', // Green
-                      '#4D96FF', // Blue
-                      '#FF8C42', // Orange
-                      '#A06CD5'  // Purple
-                  ],
-                  borderColor: '#333333',
-                  borderWidth: 1,
-                  barPercentage: 0.6,
-                  categoryPercentage: 0.7
-              }
-          ]
-      };
-
-      const configTimeline = 
-      {
-          type: 'bar',
-          data: arcData,
-          options: 
-          {
-              indexAxis: 'y',
-              responsive: true,
-              maintainAspectRatio: false,
-              scales: 
-              {
-                  x: 
-                  {
-                      title: 
-                      {
-                          display: true,
-                          text: 'Month of Academic Year (1 = April Y1, 13 = April Y2)'
-                      },
-                      min: 0,
-                      max: 16,
-                      ticks: 
-                      {
-                          stepSize: 1,
-                          callback: function(value)
-                          {
-                              const displayMonths = ["", "Apr Y1", "May Y1", "Jun Y1", "Jul Y1", "Aug Y1", "Sep Y1", "Oct Y1", "Nov Y1", "Dec Y1", "Jan Y1", "Feb Y1", "Mar Y1", "Apr Y2", "May Y2", "Jun Y2"];
-                              return displayMonths[value] || '';
-                          }
-                      }
-                  },
-                  y: {
-                      beginAtZero: true,
-                      ticks: 
-                      {
-                           font:
-                           {
-                              size: 10
-                          }
-                      }
-                  }
-              },
-              plugins:
-              {
-                  legend:
-                  {
-                      display: true,
-                      position: 'top',
-                  },
-                  tooltip: 
-                  {
-                      callbacks: 
-                      {
-                          title: function(tooltipItems)
-                          {
-                              const item = tooltipItems[0];
-                              let label = item.chart.data.labels[item.dataIndex];
-                              if
-                              (Array.isArray(label))
-                              {
-                                return label.join(' ');
-                              } else
-                              {
+        const configTimeline = {
+            type: 'bar',
+            data: arcData,
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Month of Academic Year (1 = April Y1, 13 = April Y2)'
+                        },
+                        min: 0,
+                        max: 16,
+                        ticks: {
+                            stepSize: 1,
+                            callback: function(value)
+                            {
+                                const displayMonths = ["", "Apr Y1", "May Y1", "Jun Y1", "Jul Y1", "Aug Y1", "Sep Y1", "Oct Y1", "Nov Y1", "Dec Y1", "Jan Y1", "Feb Y1", "Mar Y1", "Apr Y2", "May Y2", "Jun Y2"];
+                                return displayMonths[value] || '';
+                            }
+                        }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                             font: {
+                                size: 10
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems)
+                            {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if
+                                (Array.isArray(label))
+                                {
+                                  return label.join(' ');
+                                } else
+                                {
+                                  return label;
+                                }
+                            },
+                            label: function(context)
+                            {
+                                let label = context.dataset.label || '';
+                                if
+                                (label)
+                                {
+                                    label += ': ';
+                                }
+                                if
+                                (context.parsed.x !== null)
+                                {
+                                    const MAPPING = ["", "Apr Y1", "May Y1", "Jun Y1", "Jul Y1", "Aug Y1", "Sep Y1", "Oct Y1", "Nov Y1", "Dec Y1", "Jan Y1", "Feb Y1", "Mar Y1", "Apr Y2", "May Y2", "Jun Y2"];
+                                    const rawValue = context.raw;
+                                    const startMonth = MAPPING[Math.floor(rawValue[0])] || rawValue[0];
+                                    const endMonth = MAPPING[Math.floor(rawValue[1])] || rawValue[1];
+                                    label += `From ${startMonth} to ${endMonth}`;
+                                }
                                 return label;
-                              }
-                          },
-                          label: function(context)
-                          {
-                              let label = context.dataset.label || '';
-                              if
-                              (label)
-                              {
-                                  label += ': ';
-                              }
-                              if
-                              (context.parsed.x !== null)
-                              {
-                                  const MAPPING = ["", "Apr Y1", "May Y1", "Jun Y1", "Jul Y1", "Aug Y1", "Sep Y1", "Oct Y1", "Nov Y1", "Dec Y1", "Jan Y1", "Feb Y1", "Mar Y1", "Apr Y2", "May Y2", "Jun Y2"];
-                                  const rawValue = context.raw;
-                                  const startMonth = MAPPING[Math.floor(rawValue[0])] || rawValue[0];
-                                  const endMonth = MAPPING[Math.floor(rawValue[1])] || rawValue[1];
-                                  label += `From ${startMonth} to ${endMonth}`;
-                              }
-                              return label;
-                          }
-                      }
-                  }
-              }
-          }
-      };
+                            }
+                        }
+                    }
+                }
+            }
+        };
 
-      const Frozen TreatTimelineChart = new Chart
-      (
-          document.getElementById('Frozen TreatTimelineChart'),
-          configTimeline
-      );
-   </script>
+        const hyoukaTimelineChart = new Chart(
+            document.getElementById('hyoukaTimelineChart'),
+            configTimeline
+        );
+    </script>
 </body>
 </html>
